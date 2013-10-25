@@ -15,8 +15,8 @@ require.config({
 });
 
 // Stub out jquery and underscore dependencies to return nothing.
-define('jquery', function() { });
-define('underscore-empty', function() { });
+define('jquery');
+define('underscore-empty');
 
 // Avoid the circular dependency of Exoskeleton requring underscore if we're using an empty underscore
 define('underscore-private', ['backbone'], function(Backbone) {
