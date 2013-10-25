@@ -32,7 +32,7 @@ define(['backbone', 'underscore.template'], function(Backbone, _) {
     render: function() {
       this.el.innerHTML = this.template(this.model.toJSON());
       this.el.classList.toggle('done', this.model.get('done'));
-      this.input = this.$('.edit');
+      this.input = this.find('.edit');
       return this;
     },
 
