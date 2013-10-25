@@ -3,7 +3,7 @@
 // [LocalStorage adapter](backbone-localstorage.html)
 // to persist Backbone models within your browser.
 
-define(['backbone', 'underscore.template', 'models/todo_list', 'views/todo'], function(Backbone, _, TodoList, TodoView) {
+define(['backbone', 'underscore.template', 'models/todo_list', 'views/todo', 'text!templates/stats.html'], function(Backbone, _, TodoList, TodoView, statsTemplate) {
 
   // The Application
   // ---------------
@@ -16,7 +16,7 @@ define(['backbone', 'underscore.template', 'models/todo_list', 'views/todo'], fu
     el: "#todoapp",
 
     // Our template for the line of statistics at the bottom of the app.
-    statsTemplate: _.template(document.getElementById('stats-template').innerHTML),
+    statsTemplate: _.template(statsTemplate),
 
     // Delegated events for creating new items, and clearing completed ones.
     events: {

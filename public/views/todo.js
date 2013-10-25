@@ -1,4 +1,4 @@
-define(['backbone', 'underscore.template'], function(Backbone, _) {
+define(['backbone', 'underscore.template', 'text!templates/todo_item.html'], function(Backbone, _, template) {
   // Todo Item View
   // --------------
 
@@ -9,7 +9,7 @@ define(['backbone', 'underscore.template'], function(Backbone, _) {
     tagName:  "li",
 
     // Cache the template function for a single item.
-    template: _.template(document.getElementById('item-template').innerHTML),
+    template: _.template(template),
 
     // The DOM events specific to an item.
     events: {

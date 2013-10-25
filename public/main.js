@@ -5,6 +5,7 @@ require.config({
     davy: '../bower_components/davy/davy',
     subsequent: '../bower_components/subsequent/subsequent',
     'underscore.template': 'lib/underscore.template',
+    'text': '../bower_components/requirejs-text/text',
     'exoskeleton.localStorage': '../bower_components/exoskeleton.localStorage/backbone.localStorage'
   },
   shim: {
