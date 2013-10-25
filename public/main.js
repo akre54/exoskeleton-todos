@@ -8,12 +8,6 @@ require.config({
     'text': '../bower_components/requirejs-text/text',
     'exoskeleton.localStorage': '../bower_components/exoskeleton.localStorage/backbone.localStorage'
   },
-  shim: {
-    backbone: {
-      deps: ['jquery', 'underscore'],
-      exports: 'Backbone'
-    }
-  },
   map: {
     'backbone': {'underscore': 'underscore-empty'}, // Remap Exoskeleton to use an empty underscore file.
     '*': {'underscore': 'underscore-private'} // Everything else in the app that requests _ will use the Backbone.utils version.
