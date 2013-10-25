@@ -4,6 +4,7 @@ require.config({
     handlebars: '../bower_components/handlebars/handlebars',
     davy: '../bower_components/davy/davy',
     subsequent: '../bower_components/subsequent/subsequent',
+    'underscore.template': 'lib/underscore.template',
     'exoskeleton.localStorage': '../bower_components/exoskeleton.localStorage/backbone.localStorage'
   },
   shim: {
@@ -28,6 +29,7 @@ define('underscore-private', ['backbone'], function(Backbone) {
 });
 
 
-define(['todos'], function() {
-  // start the app
+define(['views/app'], function(AppView) {
+  // Finally, kick things off by starting the App
+  var App = new AppView;
 })
