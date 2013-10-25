@@ -3,7 +3,7 @@
 // [LocalStorage adapter](backbone-localstorage.html)
 // to persist Backbone models within your browser.
 
-(function() {
+define(['backbone', 'exoskeleton.localStorage'], function(Backbone) {
 
   // Hold onto local copy of _ from Exoskeleton's utils
   var _ = Backbone.utils;
@@ -287,4 +287,4 @@
   // Finally, we kick things off by creating the **App**.
   var App = new AppView;
 
-})();
+});
