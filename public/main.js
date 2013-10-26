@@ -1,12 +1,11 @@
 require.config({
   paths: {
+    text: '../bower_components/requirejs-text/text',
     backbone: '../bower_components/exoskeleton/exoskeleton',
-    handlebars: '../bower_components/handlebars/handlebars',
     davy: '../bower_components/davy/davy',
     subsequent: '../bower_components/subsequent/subsequent',
-    'underscore.template': 'lib/underscore.template',
-    'text': '../bower_components/requirejs-text/text',
-    'exoskeleton.localStorage': '../bower_components/exoskeleton.localStorage/backbone.localStorage'
+    'exoskeleton.localStorage': '../bower_components/exoskeleton.localStorage/backbone.localStorage',
+    'underscore.template': 'lib/underscore.template'
   },
   map: {
     'backbone': {'underscore': 'underscore-empty'}, // Remap Exoskeleton to use an empty underscore file.
