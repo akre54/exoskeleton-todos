@@ -3,7 +3,7 @@
 // [LocalStorage adapter](backbone-localstorage.html)
 // to persist Backbone models within your browser.
 
-define(['backbone', 'underscore.template', 'models/todo_list', 'views/todo', 'text!templates/stats.html'], function(Backbone, _, TodoList, TodoView, statsTemplate) {
+define(['exoskeleton', 'underscore.template', 'models/todo_list', 'views/todo', 'text!templates/stats.html'], function(Backbone, _, TodoList, TodoView, statsTemplate) {
 
   // The Application
   // ---------------

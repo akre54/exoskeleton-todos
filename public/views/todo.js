@@ -1,4 +1,4 @@
-define(['backbone', 'underscore.template', 'text!templates/todo_item.html'], function(Backbone, _, template) {
+define(['exoskeleton', 'underscore.template', 'text!templates/todo_item.html'], function(Backbone, _, template) {
   // Todo Item View
   // --------------
 

@@ -1,4 +1,4 @@
-define(['backbone'], function(Backbone) {
+define(['exoskelton'], function(Backbone) {
   // Todo Model
   // ----------
 

@@ -1,4 +1,4 @@
-define(['backbone', 'models/todo', 'exoskeleton.localStorage'], function(Backbone, Todo) {
+define(['exoskeleton', 'models/todo', 'exoskeleton.localStorage'], function(Backbone, Todo) {
   // Todo Collection
   // ---------------
 
